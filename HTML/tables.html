@@ -7,6 +7,40 @@
 </head>
 <body>
     <h1>Tables</h1>
-    <p>The <table> tag in HTML is used to define tables, which are used to format and display tabular data.</p>
+    <p>The &lt;table&gt; tag in HTML is used to define tables, which are used to format and display tabular data.</p>
+    <p>&lt;tr&gt; tag: Used to display table row.</p>
+    <p>&lt;td&gt; tag: Used to display table data.</p>
+    <p>&lt;th&gt; tag: Used in place of table data for displaying table headers.</p>
+    <p>Writing '&amp;lt;' and '&amp;gt;' displays the '&lt;' and '&gt;' symbols as text in HTML.</p>
+    <p>We can define as many table rows as we want. To add a caption to the table, we use <caption> tag inside table.</p>
+    <p>&lt;thead&gt; tag: Used to group the header content of a table, usually containing a &lt;tr&gt; with &lt;th&gt; elements.</p>
+    <p>&lt;tbody&gt; tag: Used to wrap the table body.</p>
+    In HTML, we use `&lt;` for `<`, `&gt;` for `>`, and `&amp;` for `&` to display these symbols as text.
+    <table>
+        <p>Caption: Used to give a title or description to a table.</p>
+        <caption>Employee Details</caption>
+        <!-- Head of the table. -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <!-- Body of the table. -->
+        <tbody>
+            <tr>
+                <td>Warda Noor</td>
+                <td>Software Engineer</td>
+                <td>$7000</td>
+            </tr>
+            <!-- Colspan -->
+            This attribute is used to create cells spanning multiple columns.
+            <tr>
+                <td>Thank</td>
+                <td colspan="2">You</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
