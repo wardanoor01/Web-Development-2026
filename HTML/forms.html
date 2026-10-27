@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Tag</title>
+</head>
+<body>
+    <h1>Forms in Html</h1>
+    An HTML <form> tag is used to create a form that collects input from users.
+    <!-- Rules for Writing Forms -->
+    <!-- Form 1
+    <form>
+        <label for="email1">Email:</label>
+        <input type="email" id="email1" name="email">
+    </form> -->
+    <!-- Sequence Wise -->
+    <!-- Form 2
+    <form>
+        <label for="email2">Email:</label>
+        <input type="email" id="email2" name="email">
+    </form> -->
+    <!-- Form 1 -->
+    <h2>Form 1</h2>
+    <form action="/action_page.php" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" value="Warda">
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" value="Noor">
+    <input type="submit" value="Submit">
+    </form>
+    <!-- Form 2 -->
+    <h2>Form 2</h2>
+    <form action="/action_page.php" method="post" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname">
+    <input type="submit" value="Submit">
+    </form>
+    <!-- Form 3 -->
+    <h2>Form 3</h2>
+    <form action="/action_page.php">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="name@gmail.com">
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" placeholder="Enter Password">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Form 4 -->
+    <h2>Form 4</h2>
+    <form action="/action_page.php">
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+    <!-- Radio Buttons -->
+    <h2>Radio Buttons</h2>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="html" name="fav_language" value="JavaScript">
+        <label for="javascript">Javascript</label>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Checkboxes -->
+    <h2>Checkboxes</h2>
+    <form action="/action_page.php" method="post">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Select Element -->
+    <h2>Select Element</h2>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars"> <!--size-->
+        <option value="haval">Haval</option>
+        <option value="civic">Civic</option>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        </select>
+    </form>
+    <!-- Visible Option Values -->
+    <h2>Visible Option Values</h2>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car</label>
+        <select id="cars" name="cars" size="4">
+            <option value="fortunre">Fortunre</option>
+            <option value="reborn">Reborn</option>
+            <option value="porsche">Porsche</option>
+            <option value="kia">Kia</option>
+            <option value="grande">Grande</option>
+        </select>
+        <input type="submit">
+    </form>
+    <!-- Textarea Element -->
+    <h2>Textarea Element</h2>
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30" placeholder="Share your Feedback..."></textarea>
+        <input type="submit">
+    </form>
+    <!-- Personal Data Form -->
+    <h2>Personal Data Form</h2>
+    <form action="/action_page.php">
+    <fieldset>
+        <legend>Personal Data</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe">
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+    <!-- Datalist Element -->
+    <h2>Datalist Element</h2>
+    <form action="/action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+    <!-- Output Element -->
+    <h2>Output Element</h2>
+    <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        <output name="x" for="a b"></output>
+        <input type="submit">
+    </form>
+</body>
+</html>
