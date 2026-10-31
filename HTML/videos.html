@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Videos Tag</title>
 </head>
 <body>
-    
+    <h1>Videos Tag</h1>
+    <p>To embed videos in HTML, you can use the <video> tag along with various attributes to control its behaviour.</p>
+    <video src=""></video>
+    <h2>Attributes for Video</h2>
+    We can use the following attributes:
+    <ol>
+        <li>src: Specifies the URL of the video file.</li>
+        <li>width: Adjusts the width of the video player. Height adjusts automatically to maintain aspect ratio.</li>
+        <li>controls: Displays video controls such as play, pause, volume, etc.</li>
+        <li>autoplay: Automatically starts playing the video when the page loads.</li>
+        <li>loop: Causes the video to automatically start over from beginning when it reaches the end.</li>
+        <li>preload: Specifies whether the video should be loaded when the page loads (auto, metadata, none).</li>
+    </ol>
+    <h3>For Example</h3>
+    <video src="100174-video-720.mp4" autoplay muted controls loop width="350">Nature Video</video>
+    <!-- This is also a way to write this syntax. -->
+    <video width="" autoplay loop controls muted>
+        <source src="" type="">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
